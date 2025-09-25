@@ -38,7 +38,7 @@ else
     ./joern-export /Users/scduan/bin/joern/joern-cli/cpg.bin --repr pdg --out ./pdg/${file}
 
     # Merge PDG .dot files into one
-    touch ./merged/${file}_merged.dot
+    > ./merged/${file}_merged.dot
     echo "111"
     for dot_file in ./pdg/${file}/*.dot; do
         sed '1d;$d' $dot_file >> ./merged/${file}_merged.dot
@@ -101,7 +101,7 @@ done
 touch logsl.txt
 
 # Move to merged directory to locate graph node by line number
-cd /Users/scduan/bin/joern/joern-cli/merged
+cd /mnt/aaa/bin/joern/joern-cli/merged
 echo "${file}_merged.dot"
 if grep -q "\<${linenum}<BR/>" "${file}_merged.dot"; then
     echo "2223333333333"
