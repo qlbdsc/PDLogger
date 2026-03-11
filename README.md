@@ -71,7 +71,7 @@
 
   ### 1) Clone
 
-  git clone https://github.com/qlbdsc/PDLogger.git
+  git clone xxx
   cd PDLogger
 
   ### 2) Preprocess Target Java File
